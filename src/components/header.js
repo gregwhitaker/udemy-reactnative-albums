@@ -4,9 +4,17 @@ import { Text } from 'react-native';
 
 // Make a component
 const Header = () => {
+    const { textStyle } = styles;
+
     return (
-        <Text>Albums</Text>
+        <Text style={textStyle}>Albums</Text>
     );
+};
+
+const styles = {
+    textStyle : {
+        fontSize: 20
+    }
 };
 
 // Make the component available to other parts of the app
